@@ -47,7 +47,7 @@
   "lint": "npx n8n-node lint",
   "lint:fix": "npx n8n-node lint --fix",
   "release": "npx n8n-node release",
-  "prepublishOnly": "npx n8n-node prerelease"
+  "prepublishOnly": "npm run build"
   },
   "files": ["dist"],
   "n8n": {
