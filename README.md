@@ -137,6 +137,11 @@ _This node is compatible with n8n v1.119.1 and above. It has been tested against
 ### **Get Encounter By MRN**
 ![Get Encounter By MRN](https://github.com/VorroBG/n8n-nodes-bridgegate/blob/a8eea9e9485a33e476cf38b64233e9f779abe374/assets/Get-Encounter-By-MRN.png)
 
+---
+
+### **Get Document By MRN**
+![Get Document By MRN](https://github.com/VorroBG/n8n-nodes-bridgegate/blob/a8eea9e9485a33e476cf38b64233e9f779abe374/assets/Get-Document-By-MRN.png)
+
 ## Resources
 
 * [n8n community nodes documentation](https://docs.n8n.io/integrations/#community-nodes)
