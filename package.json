@@ -1,0 +1,67 @@
+{
+  "name": "n8n-nodes-bridgegate",
+  "version": "0.1.0",
+  "description": "n8n community node for integrating with BridgeGate to access EMR/EHR data and clinical workflows.",
+  "license": "MIT",
+  "homepage": "",
+  "keywords": [
+  "n8n-community-node-package",
+  "n8n-nodes",
+  "bridgegate",
+  "api",
+  "healthcare",
+  "healthcare-data",
+  "health-it",
+  "hipaa",
+  "fhir",
+  "hl7",
+  "ehr",
+  "emr",
+  "ehr-integration",
+  "emr-integration",
+  "clinical-data",
+  "patient-data",
+  "interoperability",
+  "healthcare-integration",
+  "etl",
+  "data-pipeline",
+  "workflow-automation",
+  "athena",
+  "athenahealth",
+  "epic",
+  "cerner",
+  "nextgen",
+  "eclinicalworks",
+  "practice-fusion",
+  "pointclickcare"
+],
+  "author": { "name": "DevOps", "email": "devops@vorro.net" },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+  },
+  "scripts": {
+    "build": "n8n-node build",
+    "build:watch": "tsc --watch",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "release": "n8n-node release",
+    "prepublishOnly": "n8n-node prerelease"
+  },
+  "files": ["dist"],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": true,
+    "credentials": ["dist/credentials/BridgegateApi.credentials.js"],
+    "nodes": ["dist/nodes/Bridgegate/Bridgegate.node.js"]
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "*",
+    "eslint": "9.32.0",
+    "prettier": "3.6.2",
+    "release-it": "^19.0.4",
+    "typescript": "5.9.2"
+  },
+  "peerDependencies": { "n8n-workflow": "*" }
+}
