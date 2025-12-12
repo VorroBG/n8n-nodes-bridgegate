@@ -41,13 +41,13 @@
     "url": "https://github.com/VorroBG/n8n-nodes-bridgegate.git"
   },
   "scripts": {
-    "build": "n8n-node build",
-    "build:watch": "tsc --watch",
-    "dev": "n8n-node dev",
-    "lint": "n8n-node lint",
-    "lint:fix": "n8n-node lint --fix",
-    "release": "n8n-node release",
-    "prepublishOnly": "n8n-node prerelease"
+  "build": "npx n8n-node build",
+  "build:watch": "tsc --watch",
+  "dev": "npx n8n-node dev",
+  "lint": "npx n8n-node lint",
+  "lint:fix": "npx n8n-node lint --fix",
+  "release": "npx n8n-node release",
+  "prepublishOnly": "npx n8n-node prerelease"
   },
   "files": ["dist"],
   "n8n": {
