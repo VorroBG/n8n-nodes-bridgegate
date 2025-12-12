@@ -113,7 +113,6 @@ Returns structured document metadata and content:
 * Document name or category
 * Raw or base64-encoded data when applicable
 
-
 ## Credentials
 
 _To use the BridgeGate node, you will need a valid BridgeGate API Key. Please reach out to sales@vorro.net to request your key._
@@ -142,7 +141,27 @@ _This node is compatible with n8n v1.119.1 and above. It has been tested against
 ### **Get Document By MRN**
 ![Get Document By MRN](https://github.com/VorroBG/n8n-nodes-bridgegate/blob/a8eea9e9485a33e476cf38b64233e9f779abe374/assets/Get-Document-By-MRN.png)
 
+## Error Handling
+The node validates all required parameters (**EHR**, **MRN**, and **Practice**) before sending any request, preventing most client-side errors.
+
+### Possible Runtime Errors
+
+- **401 Unauthorized**  
+  The Bearer Token is invalid or expired. Recreate or update the credential and try again.
+
+- **500 Server Error**  
+  The BridgeGate service or the connected EHR system is temporarily unavailable. Try again later or contact **Vorro Support** at [support@vorro.net](mailto:support@vorro.net)
+
 ## Resources
 
 * [n8n community nodes documentation](https://docs.n8n.io/integrations/#community-nodes)
 
+## License
+MIT License
+
+Copyright (c) 2025 Vorro Inc
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
