@@ -15,7 +15,7 @@ import type {
 export class BridgegateApi implements ICredentialType {
 	name = 'bridgegateApi';
 
-	displayName = 'Bridgegate API';
+	displayName = 'BridgeGate API';
 	
 	icon: Icon = 'file:bridgegate.svg';
 

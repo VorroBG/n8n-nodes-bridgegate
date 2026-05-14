@@ -11,15 +11,15 @@ import { documentDescription } from './resources/document';
 
 export class Bridgegate implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Bridgegate',
+		displayName: 'BridgeGate',
 		name: 'bridgegate',
 		icon: { light: 'file:bridgegate.svg', dark: 'file:bridgegate.dark.svg' },
 		group: ['transform'],
 		version: 1,
 		subtitle: '={{ $parameter["operation"] + ": " + $parameter["resource"] }}',
-		description: 'Interact with the Bridgegate API',
+		description: 'Interact with the BridgeGate API',
 		defaults: {
-			name: 'Bridgegate',
+			name: 'BridgeGate',
 		},
 		usableAsTool: true,
 		inputs: [NodeConnectionTypes.Main],

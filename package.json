@@ -3,58 +3,67 @@
   "version": "0.1.0",
   "description": "n8n community node for integrating with BridgeGate to access EMR/EHR data and clinical workflows.",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/VorroBG/n8n-nodes-bridgegate#readme",
   "keywords": [
-  "n8n-community-node-package",
-  "n8n-nodes",
-  "bridgegate",
-  "api",
-  "healthcare",
-  "healthcare-data",
-  "health-it",
-  "hipaa",
-  "fhir",
-  "hl7",
-  "ehr",
-  "emr",
-  "ehr-integration",
-  "emr-integration",
-  "clinical-data",
-  "patient-data",
-  "interoperability",
-  "healthcare-integration",
-  "etl",
-  "data-pipeline",
-  "workflow-automation",
-  "athena",
-  "athenahealth",
-  "epic",
-  "cerner",
-  "nextgen",
-  "eclinicalworks",
-  "practice-fusion",
-  "pointclickcare"
-],
-  "author": { "name": "DevOps", "email": "devops@vorro.net" },
+    "n8n-community-node-package",
+    "n8n-nodes",
+    "bridgegate",
+    "api",
+    "healthcare",
+    "healthcare-data",
+    "health-it",
+    "hipaa",
+    "fhir",
+    "hl7",
+    "ehr",
+    "emr",
+    "ehr-integration",
+    "emr-integration",
+    "clinical-data",
+    "patient-data",
+    "interoperability",
+    "healthcare-integration",
+    "etl",
+    "data-pipeline",
+    "workflow-automation",
+    "athena",
+    "athenahealth",
+    "epic",
+    "cerner",
+    "nextgen",
+    "eclinicalworks",
+    "practice-fusion",
+    "pointclickcare"
+  ],
+  "author": {
+    "name": "DevOps",
+    "email": "devops@vorro.net"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/VorroBG/n8n-nodes-bridgegate.git"
   },
   "scripts": {
-  "build": "npx n8n-node build",
-  "build:watch": "tsc --watch",
-  "dev": "npx n8n-node dev",
-  "lint": "npx n8n-node lint",
-  "lint:fix": "npx n8n-node lint --fix",
-  "release": "npx n8n-node release",
-  "prepublishOnly": "npm run build"
+    "build": "npx n8n-node build",
+    "build:watch": "tsc --watch",
+    "dev": "npx n8n-node dev",
+    "lint": "npx n8n-node lint",
+    "lint:fix": "npx n8n-node lint --fix",
+    "release": "npx n8n-node release",
+    "prepublishOnly": "npm run build"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "n8n": {
     "n8nNodesApiVersion": 1,
     "strict": true,
-    "credentials": ["dist/credentials/BridgegateApi.credentials.js"],
-    "nodes": ["dist/nodes/Bridgegate/Bridgegate.node.js"]
+    "credentials": [
+      "dist/credentials/BridgegateApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Bridgegate/Bridgegate.node.js"
+    ]
   },
   "devDependencies": {
     "@n8n/node-cli": "*",
@@ -63,5 +72,7 @@
     "release-it": "^19.0.4",
     "typescript": "5.9.2"
   },
-  "peerDependencies": { "n8n-workflow": "*" }
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
 }
