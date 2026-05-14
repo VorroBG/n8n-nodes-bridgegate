@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-bridgegate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "n8n community node for integrating with BridgeGate to access EMR/EHR data and clinical workflows.",
   "license": "MIT",
   "homepage": "https://github.com/VorroBG/n8n-nodes-bridgegate#readme",
