@@ -21,7 +21,7 @@ export class BridgegateApi implements ICredentialType {
 
 
 	// Link to your community node's README
-	documentationUrl = 'https://github.com/org/-bridgegate?tab=readme-ov-file#credentials';
+	documentationUrl = 'https://github.com/VorroBG/n8n-nodes-bridgegate?tab=readme-ov-file#credentials';
 
 	properties: INodeProperties[] = [
 		{
